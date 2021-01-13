@@ -21,11 +21,10 @@ class App extends Component {
       } = this.props;
 
       const { inputValue } = this.state;
-
         return (
           <div className="App" style={{ padding: '10px', backgroundColor: 'brown', color: '#ffffff' }}>
             <h2 style={{ marginBottom: '100px' }}>Redux Basic Class: React with Redux</h2>
-            <input type="text" style={{height: '34px', width: '300px'}}/>
+            <input type='text' onChange={this.inputChange} value={inputValue} style={{height: '34px', width: '300px'}}/>
             <button onClick={() => clickButton(inputValue)} style={{height: '40px', padding: '0px 30px 0px 30px' }}>
               Send
             </button>
